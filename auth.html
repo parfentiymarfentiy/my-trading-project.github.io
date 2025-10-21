@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumTrade - Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <div class="matrix-bg"></div>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="quantum-logo">
+                    <div class="logo-glow">QT</div>
+                    <h1>QUANTUM TRADE</h1>
+                </div>
+                <div class="auth-tabs" id="authTabs">
+                    <button class="auth-tab active" data-tab="login">ВХОД В СИСТЕМУ</button>
+                    <button class="auth-tab" data-tab="register">РЕГИСТРАЦИЯ</button>
+                </div>
+            </div>
+
+            <!-- Форма входа -->
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label>EMAIL АДРЕС</label>
+                    <div class="input-container">
+                        <input type="email" required>
+                        <span class="input-icon">📧</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>ПАРОЛЬ</label>
+                    <div class="input-container">
+                        <input type="password" required>
+                        <span class="input-icon">🔒</span>
+                    </div>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        ЗАПОМНИТЬ МЕНЯ
+                    </label>
+                    <a href="#" class="forgot-link">ЗАБЫЛИ ПАРОЛЬ?</a>
+                </div>
+                
+                <button type="submit" class="auth-submit-btn">
+                    <span class="btn-glow"></span>
+                    <span class="btn-text">ВОЙТИ В СИСТЕМУ</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+                
+                <div class="auth-divider">
+                    <span>ИЛИ ПРОДОЛЖИТЕ ЧЕРЕЗ</span>
+                </div>
+                
+                <div class="social-auth">
+                    <button type="button" class="social-btn google">
+                        <span class="social-icon">🔍</span>
+                        GOOGLE
+                    </button>
+                    <button type="button" class="social-btn telegram">
+                        <span class="social-icon">✈️</span>
+                        TELEGRAM
+                    </button>
+                </div>
+            </form>
+
+            <!-- Форма регистрации -->
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label>ПОЛНОЕ ИМЯ</label>
+                    <div class="input-container">
+                        <input type="text" required>
+                        <span class="input-icon">👤</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>EMAIL АДРЕС</label>
+                    <div class="input-container">
+                        <input type="email" required>
+                        <span class="input-icon">📧</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>ПАРОЛЬ</label>
+                    <div class="input-container">
+                        <input type="password" required>
+                        <span class="input-icon">🔒</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>ПОДТВЕРДИТЕ ПАРОЛЬ</label>
+                    <div class="input-container">
+                        <input type="password" required>
+                        <span class="input-icon">🔒</span>
+                    </div>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        Я ПРИНИМАЮ УСЛОВИЯ СОГЛАШЕНИЯ
+                    </label>
+                </div>
+                
+                <button type="submit" class="auth-submit-btn">
+                    <span class="btn-glow"></span>
+                    <span class="btn-text">СОЗДАТЬ АККАУНТ</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </form>
+            
+            <div class="auth-footer">
+                <button class="back-btn" onclick="location.href='home.html'">
+                    ← НАЗАД К ГЛАВНОЙ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
